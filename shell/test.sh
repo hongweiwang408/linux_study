@@ -1,7 +1,16 @@
 #!/bin/bash
-IFS=$'\n'
-for v in $(ls -l);do
-		echo "111 $v"
-done
+
+testfile=$(mktemp -t log.XXXXXX)
 
 
+echo "mktemp">$testfile
+
+echo "this first" >>$testfile
+echo "this second" >>$testfile
+echo "this third" >>$testfile
+
+
+
+cat $testfile
+
+rm -f $testfile && echo "exit"
