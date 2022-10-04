@@ -1,11 +1,2 @@
-# linux_study
-## myage.sh
-```sh
-echo hello
-var=xxx
-echo $var
-but
-
-
-```
+# 记录linux shell脚本编程的一些脚本
 
